@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors=require("cors")
 const pool=require("./src/db/db")
+const bcrypt=require("bcrypt");
 app.use(cors());
 
 app.get('/test-db',async (req,res)=>{
